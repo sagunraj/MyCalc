@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/grayish"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingRight="10dp"
+        android:paddingTop="70dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/background_light" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/acbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="acClick"
+                android:text="AC"
+                android:textSize="30sp" />
+
+            <Button
+
+                android:id="@+id/pmbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="+/-"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/percentbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="percentClick"
+                android:text="%"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/divbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/orangish"
+                android:onClick="butOpClick"
+                android:text="/"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sevenbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="7"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/eightbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="8"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/ninebtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="9"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/mulbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/orangish"
+                android:onClick="butOpClick"
+                android:text="*"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fourbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="4"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/fivebtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="5"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/sixbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/subbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/orangish"
+                android:onClick="butOpClick"
+                android:text="-"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/onebtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/twobtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/threebtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/whitish"
+                android:onClick="numberClicked"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@color/orangish"
+                android:onClick="butOpClick"
+                android:text="+"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zerobtn"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_weight="3.25"
+            android:background="@color/whitish"
+            android:onClick="numberClicked"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/pointbtn"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_weight="0.25"
+            android:background="@color/whitish"
+            android:onClick="numberClicked"
+            android:text="."
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/equalsbtn"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_weight="0.25"
+            android:background="@color/orangish"
+            android:onClick="butEqClick"
+            android:text="="
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
